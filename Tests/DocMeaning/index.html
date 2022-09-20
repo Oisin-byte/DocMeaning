@@ -1,0 +1,80 @@
+<!-- 
+    Created by Oisin
+    Github: oisin-byte
+    Date Created: 20/09/22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+      <!-- Unicons CSS -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>DocMeaning</h1>
+
+        <!-- input tag  -->
+        <input id="searchbar" onkeyup="search_terms()" type="text"
+            name="search" placeholder="Search terms here..">
+
+        
+    </div>
+    <div class="catergories">
+        <!-- ordered list -->
+        <dl id="list">
+            <dt>A</dt>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/heart-and-blood-vessels/conditions/abdominal-aortic-aneurysm/">Abdominal aortic aneurysm</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/skin-hair-and-nails/acne/">Acne</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/acute-cholecystitis/">Acute cholecystitis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/acute-lymphoblastic-leukaemia/">Acute lymphoblastic leukaemia</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-children/acute-lymphoblastic-leukaemia-children/">Acute lymphoblastic leukaemia: Children</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-teenagers-and-young-adults/acute-lymphoblastic-leukaemia-teenagers-and-young-adults/">Acute lymphoblastic leukaemia: Children</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-teenagers-and-young-adults/acute-lymphoblastic-leukaemia-teenagers-and-young-adults/">Acute lymphoblastic leukaemia: Teenagers and young adults</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/acute-myeloid-leukaemia/">Acute myeloid leukaemia</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-children/acute-myeloid-leukaemia-children/">Acute myeloid leukaemia: Children</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-teenagers-and-young-adults/acute-myeloid-leukaemia-teenagers-and-young-adults/">Acute myeloid leukaemia: Teenagers and young adults</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/acute-pancreatitis">Acute pancreatitis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/addisons-disease">Addison's disease</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/alcohol-related-liver-disease">Alcohol-related liver disease</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/allergic-rhinitis">Allergic rhinitis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/allergies">Allergies</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/alzheimers-disease">Alzheimer's disease</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/anal-cancer">Anal cancer</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z#:~:text=Anal%20cancer-,Anaphylaxis,-Angioedema">Anaphylaxis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/angioedema">Angioedema</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/ankylosing-spondylitis">Ankylosing spondylitis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/anorexia-nervosa">Anorexia nervosa</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/anxiety">Anxiety</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/anxiety-disorders-in-children">Anxiety disorders in children</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/appendicitis">Appendicitis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/arthritis">Arthritis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/asbestosis">Asbestosis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/asthma">Asthma</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/atopic-eczema">Atopic eczema</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/attention-deficit-hyperactivity-disorder-adhd">Attention deficit hyperactivity disorder (ADHD)</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/a/autistic-spectrum-disorder-asd">Autistic spectrum disorder (ASD)</a></dd>
+            
+            <!-- B -->
+            <dt>B</dt>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/b/bacterial-vaginosis">Bacterial vaginosis</a></dd>
+            <dd class="terms"><a href="https://www.nhsinform.scot/illnesses-and-conditions/a-to-z/b/benign-prostate-enlargement">Benign prostate enlargement</a></dd>
+            <dd class="terms"><a href=""></a></dd>
+            <dd class="terms"><a href=""></a></dd>
+            <dd class="terms"><a href=""></a></dd>
+            <dd class="terms"><a href=""></a></dd>
+
+
+
+        </dl>   
+    </div>
+    
+    <script src="./main.js"></script>
+    <script src="./terms.js"></script>
+</body>
+</html>

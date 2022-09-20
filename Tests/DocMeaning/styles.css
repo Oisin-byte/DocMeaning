@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.catergories {
+    word-wrap: break-word;
+}
+
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+}
+
+#searchbar{
+	margin-left: 2%;
+	padding:15px;
+	border-radius: 15px;
+}
+
+input[type=text] {
+	width: 20%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+input[type=text]:focus {
+	width: 70%;
+}
+
+#list{
+	font-size: 1.5em;
+	margin-left: 90px;
+}
+
+#list dd{
+	list-style-type: square;
+	display:block;
+}
+
+#list dt{
+	text-decoration: underline double black;
+	font-weight: 900;
+	text-underline-position: under;
+	display: inline;
+}
+
+.terms{
+display: list-item;	
+}
+
